@@ -18,22 +18,22 @@ if(answer1 === 'Y' || answer1 === 'y') {
   alert('You have ' + userPoints + ' point ' + user);
 } else {
   alert(user + ' Ya, might want to go see the optometrist');
-  userPoints = userPoints - 1;
+  userPoints = userPoints;
   alert('You have ' + userPoints + ' point ' + user);
 }
-var answer2 = prompt(user + ' Do you think I\'m old?');
+var answer2 = prompt(user + ' Do you think I\'m old? Type yes or no.').toLowerCase();
 console.log('Do they think I am the crypt keeper?');
 
 if(answer2 === 'N' || answer2 === 'n') {
   alert('Thanks ' + user + ' for not thinking I\'m the crypt keeper');
   userPoints++;
-  alert('You have ' + userPoints + 'points ' + user);
+  alert('You have ' + userPoints + ' points ' + user);
 } else {
   alert('Yes ' + user + '...I was on the Ark...smart arse!');
   userPoints = userPoints - 1;
   alert('You have ' + userPoints + ' point ' + user);
 }
-var answer3 = prompt('Am I older than Janet Jackson? ' + user);
+var answer3 = prompt('Am I older than Janet Jackson, ' + user + ' ?. Type yes or no.').toLowerCase();
 console.log('Asking about my baby!');
 
 if(answer3 === 'Y' || answer3 === 'y') {
@@ -45,7 +45,7 @@ if(answer3 === 'Y' || answer3 === 'y') {
   userPoints = userPoints - 1;
   alert('You have ' + userPoints + ' point ' + user);
 }
-var answer4 = prompt('Have I been to Mogadishu ' + user + '?');
+var answer4 = prompt('Have I been to Mogadishu ' + user + '?. Type yes or no.').toLowerCase();
 console.log('Everybody was Kung Fu Fighting...');
 
 if(answer4 === 'Y' || answer4 === 'y') {
@@ -53,14 +53,14 @@ if(answer4 === 'Y' || answer4 === 'y') {
   userPoints++;
   alert('You have ' + userPoints + ' points ' + user);
 } else {
-  alert('Really ' + user + ' all this ruggedness and you...wowee!');
+  alert('Really ' + user + ' and let all this ruggedness go to waste!');
   userPoints = userPoints - 1;
   alert('You have ' + userPoints + ' point ' + user);
 }
 alert(user + ' This is the last question...R U ready? Go on, hit OK...don\'t be scared');
 console.log('The final question');
 
-var answer5 = prompt('Am I going to make it through Code 201? ' + user);
+var answer5 = prompt('Am I going to make it through Code 201? ' + user + ' Type yes or no.').toLowerCase();
 console.log('Does' + user + ' think I got the chops');
 
 if(answer5 === 'Y' || answer5 === 'y') {
@@ -70,6 +70,6 @@ if(answer5 === 'Y' || answer5 === 'y') {
 } else {
   alert('Well boooo to you toooo ' + user);
   userPoints = userPoints - 1;
-  alert('You have ' + userPoints + ' point ' + user);
-  alert('If you have any negative points or 0, you know me not!!!');
+  alert('You have ' + userPoints + ' point(s) ' + user);
+  alert('If you have any negative points or 0, you know me...NOT!!!');
 }
