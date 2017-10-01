@@ -61,7 +61,7 @@ alert(user + ' This is the last question...R U ready? Go on, hit OK...don\'t be 
 console.log('The final question');
 
 var answer5 = prompt('Am I going to make it through Code 201? ' + user + ' Type yes or no.').toLowerCase();
-console.log('Does' + user + ' think I got the chops');
+console.log('Answers if ' + user + ' thinks I got the chops');
 
 if(answer5 === 'Y' || answer5 === 'y') {
   alert('Yep ' + user + ' I think so too?');
@@ -71,5 +71,45 @@ if(answer5 === 'Y' || answer5 === 'y') {
   alert('Well boooo to you toooo ' + user);
   userPoints = userPoints - 1;
   alert('You have ' + userPoints + ' point(s) ' + user);
-  alert('If you have any negative points or 0, you know me...NOT!!!');
+
+}
+var oldPoints = userPoints;
+var guess = 0;
+var morePoint = true;
+while (guess < 3 && morePoint){
+  var answer6 = prompt('Guess how many countries I have lived in ' + user + ' ? Please input a number on this question');
+  console.log('asks user to guess how many countries I\'ve lived in');
+
+  if(answer6 == 3) {
+    alert('wow, you got it right ' + user);
+    userPoints++;
+    morePoint = false;
+    alert('You have ' + userPoints + ' points ' + user);
+  } else if (answer6 > 3){
+    alert('Go ahead and try again ' + user + ' Your answer is too high');
+    guess++;
+  } else if (answer6 < 3){
+    alert('Go ahead and try again ' + user + ' Your answer is too low!');
+    guess++;
+  }
+}
+alert('At this time ' + user + 'You have ' + userPoints + ' points');
+console.log('lets user know how many points he has so far');
+
+var newGuess = 0;
+var myCountries = ['UNITED STATES' , 'GERMANY' , 'THAILAND'];
+while (newGuess < 5){
+  var answer7 = prompt('Hey ' + user + ' Can you guess one of the countries I\'ve lived in? This is not yes/no. I actually want you to type in a country').toUpperCase();;
+  console.log('asking ' + user + ' to input a guess of any of the countries I\'ve lived in.');
+
+  if(answer7 === myCountries[0] || answer7 === myCountries[1] || answer7 === myCountries[2]){
+    alert('Wow are you psychic, ' + user + '?');
+    console.log('Checks to see if user guesses a country correctly');
+    userPoints++;
+    newGuess = 6;
+  } else if(answer7 !== myCountries[0] || answer7 !== myCountries[1] || answer7 !== myCountries[2]){
+    alert('Nope ' + user + ' I have never lived there. Try again');
+    newGuess++;
+  };
+  alert(' Well ' + user + ' you got ' + userPoints + ' out of 7 questions correct!');
 }
