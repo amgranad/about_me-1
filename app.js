@@ -7,9 +7,9 @@ alert('Hey there, I think you are about to play a game');
 var user = prompt('Great, my name is Dennis...what is yours?');
 console.log('The users name is ' + user);
 
-alert('The game is called Guess About Me. Your job is to answer questions yes or no with a Y or N.');
+alert('The game is called Guess About Me. Your job is to answer questions yes or no with a y or n.');
 
-var answer1 = prompt('Do you think I am male? Type yes or no.').toLowerCase();
+var answer1 = prompt('Do you think I am male? Type y or n.').toLowerCase();
 console.log('Asking am I a guy');
 
 if(answer1 === 'Y' || answer1 === 'y') {
@@ -21,7 +21,7 @@ if(answer1 === 'Y' || answer1 === 'y') {
   userPoints = userPoints;
   alert('You have ' + userPoints + ' point ' + user);
 }
-var answer2 = prompt(user + ' Do you think I\'m old? Type yes or no.').toLowerCase();
+var answer2 = prompt(user + ' Do you think I\'m old? Type y or n.').toLowerCase();
 console.log('Do they think I am the crypt keeper?');
 
 if(answer2 === 'N' || answer2 === 'n') {
@@ -33,7 +33,7 @@ if(answer2 === 'N' || answer2 === 'n') {
   userPoints = userPoints - 1;
   alert('You have ' + userPoints + ' point ' + user);
 }
-var answer3 = prompt('Am I older than Janet Jackson, ' + user + ' ?. Type yes or no.').toLowerCase();
+var answer3 = prompt('Am I older than Janet Jackson, ' + user + ' ?. Type y or n.').toLowerCase();
 console.log('Asking about my baby!');
 
 if(answer3 === 'Y' || answer3 === 'y') {
@@ -45,7 +45,7 @@ if(answer3 === 'Y' || answer3 === 'y') {
   userPoints = userPoints - 1;
   alert('You have ' + userPoints + ' point ' + user);
 }
-var answer4 = prompt('Have I been to Mogadishu ' + user + '?. Type yes or no.').toLowerCase();
+var answer4 = prompt('Have I been to Mogadishu ' + user + '?. Type y or n.').toLowerCase();
 console.log('Everybody was Kung Fu Fighting...');
 
 if(answer4 === 'Y' || answer4 === 'y') {
@@ -60,7 +60,7 @@ if(answer4 === 'Y' || answer4 === 'y') {
 alert(user + ' This is the last question...R U ready? Go on, hit OK...don\'t be scared');
 console.log('The final question');
 
-var answer5 = prompt('Am I going to make it through Code 201? ' + user + ' Type yes or no.').toLowerCase();
+var answer5 = prompt('Am I going to make it through Code 201? ' + user + ' Type y or n.').toLowerCase();
 console.log('Answers if ' + user + ' thinks I got the chops');
 
 if(answer5 === 'Y' || answer5 === 'y') {
@@ -93,7 +93,7 @@ while (guess < 3 && morePoint){
     guess++;
   }
 }
-alert('At this time ' + user + 'You have ' + userPoints + ' points');
+alert('At this time ' + user + ' You have ' + userPoints + ' points');
 console.log('lets user know how many points he has so far');
 
 var newGuess = 0;
