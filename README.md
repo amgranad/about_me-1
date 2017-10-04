@@ -1,2 +1,4 @@
-# about_me
-# adding questions 6 and 7
+PAIR PROGRAMMING:
+
+Driver: Amber Kim
+Navigator: Dennis Comer
