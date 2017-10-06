@@ -38,29 +38,30 @@ for (var i = 0; i < 5; i++) {
   console.log('Question iteration: ' + (i + 1));
 }
 
-// //question 6 items
+//question 6 items
 // var oldPoints = userPoints;
-// var guess = 0;
-// var morePoint = true;
-// while (guess < 3 && morePoint){
-//   var answer6 = prompt('Guess how many countries I have lived in ' + user + ' ? Please input a number on this question');
-//   console.log('asks user to guess how many countries I\'ve lived in');
-//
-//   if(answer6 == 3) {
-//     alert('wow, you got it right ' + user);
-//     userPoints++;
-//     morePoint = false;
-//     alert('You have ' + userPoints + ' points ' + user);
-//   } else if (answer6 > 3){
-//     alert('Go ahead and try again ' + user + ' Your answer is too high');
-//     guess++;
-//   } else if (answer6 < 3){
-//     alert('Go ahead and try again ' + user + ' Your answer is too low!');
-//     guess++;
-//   }
-// }
-// alert('At this time ' + user + ' You have ' + userPoints + ' points');
-// console.log('lets user know how many points he has so far');
+var guess = 0;
+var morePoint = true;
+while (guess < 3 && morePoint) {
+  var answer6 = prompt('Guess how many countries I have lived in ' + user + ' ? Please input a number on this question');
+  console.log('asks user to guess how many countries I\'ve lived in');
+  if(answer6 == 3) {
+    alert('wow, you got it right ' + user);
+    userPoints++;
+    morePoint = false;
+    alert('You have ' + userPoints + ' points ' + user);
+  } else if (answer6 > 3){
+    alert('Go ahead and try again ' + user + ' Your answer is too high');
+    guess++;
+  } else if (answer6 < 3){
+    alert('Go ahead and try again ' + user + ' Your answer is too low!');
+    guess++;
+  } else {
+    //if they don't put in a number.
+  }
+}
+alert('At this time ' + user + ' You have ' + userPoints + ' points');
+console.log('lets user know how many points he has so far');
 
 // //question 7 items
 // var newGuess = 0;
