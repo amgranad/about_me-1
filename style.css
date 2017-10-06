@@ -1,9 +1,12 @@
 * {
   font-family: sans-serif;
-  background-color: white;
+  background-color: rgb(122,145,141);
 }
 
 h1 {
-  color: blue
+  color: rgb(235, 254, 216);
   ;
+}
+h2 {
+  color: rgb(197, 237, 172);
 }

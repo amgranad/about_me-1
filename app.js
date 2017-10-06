@@ -21,14 +21,14 @@ var questions = [
 
 var askQuestion = function(q, a) {
   var answer = prompt(q).toLowerCase();
-  console.log('user is asked ' + q + '. and answered ' + answer);
+  console.log(user + ' is asked ' + q + '. and answered ' + answer);
   if (answer === a) {
     userPoints++;
     console.log('user points: ' + userPoints);
     alert('Whew...glad you got that right ' + user + '. You have ' + userPoints );
     console.log('user congrats');
   } else {
-    alert(user + 'Wrong! Womp-womp-wooommppp. You have ' + userPoints + '.');
+    alert(user + ' Wrong!  Womp-womp-wooommppp. You have ' + userPoints + '.');
     console.log('user missed question. user points: ' + userPoints + '. user answer was ' + answer + ' vs ' + a);
   }
 };
