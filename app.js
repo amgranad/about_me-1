@@ -8,63 +8,63 @@ alert('Hey there, I think you are about to play a game');
 var user = prompt('Great, my name is Dennis...what is yours?');
 console.log('The users name is ' + user);
 
-// alert('The game is called Guess About Me. Your job is to answer questions yes or no with a y or n.');
-//
-// //quiz questions
-// var questions = [
-//   ['Do you think I am male? Type y or n.', 'y'],
-//   ['Do you think I\'m old? Type y or n.', 'n'],
-//   ['Am I older than Janet Jackson', 'y'],
-//   ['Have I been to Mogadishu?', 'y'],
-//   ['Am I going to make it through Code 201?', 'y']
-// ];
-//
-// var askQuestion = function(q, a) {
-//   var answer = prompt(q).toLowerCase();
-//   console.log(user + ' is asked ' + q + '. and answered ' + answer);
-//   if (answer === a) {
-//     userPoints++;
-//     console.log('user points: ' + userPoints);
-//     alert('Whew...glad you got that right ' + user + '. You have ' + userPoints );
-//     console.log('user congrats');
-//   } else {
-//     alert(user + ' Wrong!  Womp-womp-wooommppp. You have ' + userPoints + '.');
-//     console.log('user missed question. user points: ' + userPoints + '. user answer was ' + answer + ' vs ' + a);
-//   }
-// };
-//
-// for (var i = 0; i < 5; i++) {
-//   askQuestion(questions[i][0], questions[i][1]);
-//   console.log('Question iteration: ' + (i + 1));
-// }
+alert('The game is called Guess About Me. Your job is to answer questions yes or no with a y or n.');
+
+//quiz questions
+var questions = [
+  ['Do you think I am male? Type y or n.', 'y'],
+  ['Do you think I\'m old? Type y or n.', 'n'],
+  ['Am I older than Janet Jackson', 'y'],
+  ['Have I been to Mogadishu?', 'y'],
+  ['Am I going to make it through Code 201?', 'y']
+];
+
+var askQuestion = function(q, a) {
+  var answer = prompt(q).toLowerCase();
+  console.log(user + ' is asked ' + q + '. and answered ' + answer);
+  if (answer === a) {
+    userPoints++;
+    console.log('user points: ' + userPoints);
+    alert('Whew...glad you got that right ' + user + '. You have ' + userPoints );
+    console.log('user congrats');
+  } else {
+    alert(user + ' Wrong!  Womp-womp-wooommppp. You have ' + userPoints + '.');
+    console.log('user missed question. user points: ' + userPoints + '. user answer was ' + answer + ' vs ' + a);
+  }
+};
+
+for (var i = 0; i < 5; i++) {
+  askQuestion(questions[i][0], questions[i][1]);
+  console.log('Question iteration: ' + (i + 1));
+}
 
 //question 6 items
-// var oldPoints = userPoints;
-// var guess = 0;
-//
-// var howManyCountries = function (){
-//   var answer6 = prompt('Guess how many countries I have lived in ' + user + ' ? Please input a number on this question');
-//   console.log('asks user to guess how many countries I\'ve lived in');
-//   if (answer6 == 3) {
-//     alert('wow, you got it right ' + user);
-//     userPoints++;
-//     morePoint = false;
-//     alert('You have ' + userPoints + ' points ' + user);
-//   } else if (answer6 > 3){
-//     alert('Go ahead and try again ' + user + ' Your answer is too high');
-//   } else if (answer6 < 3){
-//     alert('Go ahead and try again ' + user + ' Your answer is too low!');
-//   } else {
-//     alert('please enter only numbers');
-//   };
-// };
-//
-// var morePoint = true;
-// while (guess < 4 && morePoint) {
-//   howManyCountries();
-//   guess++;
-//   console.log('user guesses: ' + guess);
-// }
+var oldPoints = userPoints;
+var guess = 0;
+
+var howManyCountries = function (){
+  var answer6 = prompt('Guess how many countries I have lived in ' + user + ' ? Please input a number on this question');
+  console.log('asks user to guess how many countries I\'ve lived in');
+  if (answer6 == 3) {
+    alert('wow, you got it right ' + user);
+    userPoints++;
+    morePoint = false;
+    alert('You have ' + userPoints + ' points ' + user);
+  } else if (answer6 > 3){
+    alert('Go ahead and try again ' + user + ' Your answer is too high');
+  } else if (answer6 < 3){
+    alert('Go ahead and try again ' + user + ' Your answer is too low!');
+  } else {
+    alert('please enter only numbers');
+  };
+};
+
+var morePoint = true;
+while (guess < 4 && morePoint) {
+  howManyCountries();
+  guess++;
+  console.log('user guesses: ' + guess);
+}
 
 //question 7 items
 var newGuess = 0;
